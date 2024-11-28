@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Presença Escolar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> <!-- QRCode.js -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Presença Escolar</h1>
+        
+        <!-- Formulário para adicionar nome -->
+        <form id="attendanceForm">
+            <input type="text" id="studentName" placeholder="Nome do aluno" required>
+            <button type="submit">Adicionar</button>
+        </form>
+        
+        <!-- Botão para exportar para TXT -->
+        <button id="exportButton">Exportar para .txt</button>
+
+        <!-- Lista de alunos -->
+        <ul id="attendanceList">
+            <!-- Os alunos serão listados aqui -->
+        </ul>
+
+        <!-- Área para visualizar QR Code -->
+        <div id="qrCodeArea"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
